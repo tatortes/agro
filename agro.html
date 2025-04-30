@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroContar - Escritório Contábil em Goiânia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.9) 0%, rgba(5, 150, 105, 0.9) 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .section-divider {
+            position: relative;
+            height: 80px;
+            overflow: hidden;
+        }
+        .section-divider::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 100%;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="bg-emerald-600 text-white p-2 rounded-lg mr-3">
+                        <i class="fas fa-calculator text-2xl"></i>
+                    </div>
+                    <a href="#" class="text-2xl font-bold text-emerald-600">Agro<span class="text-gray-800">Contar</span></a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-emerald-600 font-medium hover:text-emerald-800">Início</a>
+                    <a href="#servicos" class="text-gray-600 hover:text-emerald-600 font-medium">Serviços</a>
+                    <a href="#sobre" class="text-gray-600 hover:text-emerald-600 font-medium">Sobre Nós</a>
+                    <a href="#contato" class="text-gray-600 hover:text-emerald-600 font-medium">Contato</a>
+                </nav>
+                
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Soluções Contábeis para o Agronegócio</h1>
+                <p class="text-xl mb-8 opacity-90">Expertise contábil especializada no setor agrícola, oferecendo soluções personalizadas para sua empresa em Goiânia e região.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contato" class="bg-white text-emerald-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold text-center hover-scale">Fale Conosco</a>
+                    <a href="#servicos" class="border-2 border-white text-white hover:bg-white hover:text-emerald-600 px-8 py-3 rounded-lg font-semibold text-center hover-scale">Nossos Serviços</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Agronegócio" class="rounded-xl shadow-2xl max-w-md w-full hover-scale">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-8 rounded-xl shadow-md hover-scale">
+                    <div class="text-emerald-600 mb-4">
+                        <i class="fas fa-users text-4xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-emerald-600 mb-2">+500</h3>
+                    <p class="text-gray-600">Clientes Atendidos</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover-scale">
+                    <div class="text-emerald-600 mb-4">
+                        <i class="fas fa-calendar-check text-4xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-emerald-600 mb-2">15+</h3>
+                    <p class="text-gray-600">Anos de Experiência</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover-scale">
+                    <div class="text-emerald-600 mb-4">
+                        <i class="fas fa-tractor text-4xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-emerald-600 mb-2">120+</h3>
+                    <p class="text-gray-600">Propriedades Rurais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Serviços Contábeis</h2>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all hover-scale">
+                    <div class="text-emerald-600 mb-4">
+                        <i class="fas fa-file-invoice-dollar text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Contabilidade Rural</h3>
+                    <p class="text-gray-600">Gestão contábil especializada para propriedades rurais, incluindo controle de custos, apuração de resultados e planejamento tributário.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all hover-scale">
+                    <div class="text-emerald-600 mb-4">
+                        <i class="fas fa-chart-line text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Consultoria Tributária</h3>
+                    <p class="text-gray-600">Análise e planejamento fiscal para redução legal de tributos, adequação ao melhor regime tributário e acompanhamento de legislação.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all hover-scale">
+                    <div class="text-emerald-600 mb-4">
+                        <i class="fas fa-hand-holding-usd text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Crédito Rural</h3>
+                    <p class="text-gray-600">Assessoria completa para obtenção de financiamentos e linhas de crédito específicas para o agronegócio junto a bancos e instituições financeiras.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all hover-scale">
+                    <div class="text-emerald-600 mb-4">
+                        <i class="fas fa-balance-scale text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Legalização de Propriedades</h3>
+                    <p class="text-gray-600">Regularização de imóveis rurais junto aos órgãos competentes, incluindo CAR, ITR e demais obrigações legais.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all hover-scale">
+                    <div class="text-emerald-600 mb-4">
+                        <i class="fas fa-book text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Escrituração Fiscal</h3>
+                    <p class="text-gray-600">Elaboração e entrega de todas as obrigações acessórias como SPED Fiscal, SPED Contábil, ECD, ECF e DCTF.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all hover-scale">
+                    <div class="text-emerald-600 mb-4">
+                        <i class="fas fa-user-tie text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">DPO e LGPD</h3>
+                    <p class="text-gray-600">Implementação da Lei Geral de Proteção de Dados nas operações do agronegócio, com designação de encarregado (DPO) quando necessário.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <div class="section-divider"></div>
+    <section id="sobre" class="py-20 bg-emerald-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Sobre a AgroContar</h2>
+                    <p class="text-lg mb-6 opacity-90">Fundada em 2008 em Goiânia, a AgroContar surgiu com o propósito de oferecer serviços contábeis especializados para o setor agrícola, compreendendo as particularidades do agronegócio brasileiro.</p>
+                    <p class="text-lg mb-8 opacity-90">Nossa equipe é composta por contadores com formação específica em contabilidade rural e vasta experiência no acompanhamento de propriedades de diversos portes e culturas.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-white text-emerald-600 p-3 rounded-full">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Missão</h4>
+                            <p class="opacity-90">Fornecer soluções contábeis estratégicas que agreguem valor aos negócios rurais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1600880292203-75771f0a2117?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Equipe AgroContar" class="rounded-xl shadow-2xl w-full hover-scale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">O que nossos clientes dizem</h2>
+                <div class="w-20 h-1 bg-emerald-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover-scale">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"A AgroContar transformou nossa gestão financeira rural. Em 2 anos reduzimos nossos custos tributários em 35% com o planejamento adequado."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Carlos Mendes</h4>
+                            <p class="text-sm text-gray-500">Fazenda Santa Rita</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md hover-scale">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Excelente atendimento e conhecimento do setor. Nos ajudaram a regularizar toda a documentação da fazenda que estava defasada há anos."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Paula Silva</h4>
+                            <p class="text-sm text-gray-500">Agropecuária Vale Verde</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md hover-scale">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Conseguiram um financiamento excelente para nossa expansão que eu não sabia que poderíamos acessar. Super recomendo!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Roberto Almeida</h4>
+                            <p class="text-sm text-gray-500">Sítio São José</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Entre em Contato</h2>
+                    <p class="text-lg text-gray-600 mb-8">Estamos prontos para ajudar sua propriedade rural ou empresa agrícola com soluções contábeis personalizadas.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-emerald-600 mt-1 mr-4">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Endereço</h4>
+                                <p class="text-gray-600">Av. Tocantins, 1245 - Setor Oeste, Goiânia - GO, 74150-120</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-emerald-600 mt-1 mr-4">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Telefone</h4>
+                                <p class="text-gray-600">(62) 3210-4567</p>
+                                <p class="text-gray-600">WhatsApp: (62) 99876-5432</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-emerald-600 mt-1 mr-4">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                <p class="text-gray-600">contato@agrocontar.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-emerald-600 mt-1 mr-4">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Horário de Atendimento</h4>
+                                <p class="text-gray-600">Segunda a Sexta: 8h às 18h</p>
+                                <p class="text-gray-600">Sábado: 8h às 12h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Envie sua mensagem</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">Nome</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 mb-2">Telefone</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="subject" class="block text-gray-700 mb-2">Assunto</label>
+                                <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                                    <option value="">Selecione...</option>
+                                    <option value="contabilidade">Contabilidade Rural</option>
+                                    <option value="tributario">Consultoria Tributária</option>
+                                    <option value="credito">Crédito Rural</option>
+                                    <option value="legalizacao">Legalização de Propriedades</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.123456789012!2d-49.12345678901234!3d-16.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDA3JzI0LjQiUyA0OcKwMDcnMjQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-emerald-600 text-white p-2 rounded-lg mr-3">
+                            <i class="fas fa-calculator text-xl"></i>
+                        </div>
+                        <a href="#" class="text-2xl font-bold text-white">Agro<span class="text-emerald-400">Contar</span></a>
+                    </div>
+                    <p class="text-gray-400">Especialistas em contabilidade rural e consultoria tributária para o agronegócio em Goiânia e região.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-emerald-400">Início</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-emerald-400">Serviços</a></li>
+                        <li><a href="#sobre" class="text-gray-400 hover:text-emerald-400">Sobre Nós</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-emerald-400">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400">Contabilidade Rural</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400">Consultoria Tributária</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400">Crédito Rural</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-emerald-400">Legalização</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-emerald-600 hover:bg-emerald-700 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-emerald-600 hover:bg-emerald-700 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-emerald-600 hover:bg-emerald-700 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-emerald-600 hover:bg-emerald-700 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <h5 class="font-bold mb-2">Assine nossa newsletter</h5>
+                        <div class="flex">
+                            <input type="email" placeholder="Seu email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                            <button class="bg-emerald-600 hover:bg-emerald-700 px-4 py-2 rounded-r-lg">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 AgroContar - Todos os direitos reservados. Desenvolvido com <i class="fas fa-heart text-emerald-400"></i> em Goiânia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/5562998765432" class="bg-emerald-500 hover:bg-emerald-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Simple form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Obrigado por sua mensagem! Entraremos em contato em breve.');
+            this.reset();
+        });
+        
+        // Mobile menu toggle functionality would go here
+    </script>
+</body>
+</html>
